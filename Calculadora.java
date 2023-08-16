@@ -1,14 +1,18 @@
-    public static double realizarTangente(Scanner scanner) {
-        System.out.print("Digite el angulo en grados: ");
-        double angulo = Math.toRadians(scanner.nextDouble());
-        return Math.tan(angulo);
+    public static double realizarPotencia(Scanner scanner) {
+        System.out.print("Digite la base: ");
+        double base = scanner.nextDouble();
+        System.out.print("Digite el exponente: ");
+        double exponente = scanner.nextDouble();
+        
+        return Math.pow(base, exponente);
     }
     
-    public static double realizarRaiz(Scanner scanner) {
-        System.out.print("Digite el numero: ");
-        double num = scanner.nextDouble();
-        System.out.print("Digite el indice de la raiz: ");
-        double indice = scanner.nextDouble();
+    public static double calcularIVA(Scanner scanner) {
+        System.out.print("Digite el monto: ");
+        double monto = scanner.nextDouble();
+        System.out.print("Digite el porcentaje del IVA: ");
+        double porcentajeIVA = scanner.nextDouble();
         
-        return Math.pow(num, 1.0 / indice);
+        return monto * (porcentajeIVA / 100.0);
     }
+}
